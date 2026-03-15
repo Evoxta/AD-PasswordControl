@@ -1,0 +1,69 @@
+<Window x:Class="EvoxtaADReset.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Help - Password Control"
+        Height="470"
+        Width="540"
+        MinHeight="470"
+        MinWidth="540"
+        Background="#0f172a"
+        Foreground="#f8fafc"
+        WindowStartupLocation="CenterOwner">
+
+    <Grid Margin="30">
+
+        <Border Background="#1e293b"
+                CornerRadius="12"
+                Padding="22">
+
+            <StackPanel>
+
+                <TextBlock Text="Password Control"
+                           FontSize="22"
+                           FontWeight="Bold"/>
+
+                <TextBlock Name="VersionText"
+                           Margin="0 6 0 16"
+                           Foreground="#94a3b8"/>
+
+                <TextBlock Text="Update Status"
+                           FontWeight="Bold"/>
+
+                <TextBlock Name="UpdateStatusText"
+                           Margin="0 6 0 12"
+                           TextWrapping="Wrap"/>
+
+                <Button Name="UpdateButton"
+                        Content="Check for Updates"
+                        Width="180"
+                        Height="36"
+                        Click="CheckUpdates_Click"/>
+
+                <Separator Margin="0 18 0 18"/>
+
+                <TextBlock Text="Credits"
+                           FontWeight="Bold"/>
+
+                <TextBlock Margin="0 6 0 0"
+                           TextWrapping="Wrap">
+                    Developed by Evoxta
+                </TextBlock>
+
+                <TextBlock Margin="0 4 0 0"
+                           TextWrapping="Wrap">
+                    Active Directory Integration
+                </TextBlock>
+
+                <TextBlock Margin="0 18 0 0"
+                           Foreground="#94a3b8"
+                           TextWrapping="Wrap">
+                    © 2025 Evoxta. All rights reserved.
+                </TextBlock>
+
+            </StackPanel>
+
+        </Border>
+
+    </Grid>
+
+</Window>
