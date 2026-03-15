@@ -1,7 +1,5 @@
-# AD-PasswordControl
-Active Directory User Password Reset Tool
+# Active Directory Password Control
+Password Control by Evoxta is a pretty cool tool, perfect for IT administrators to help simplify resetting, disabling or modifying Windows Server Active Directory user accounts.
 
-it's pretty sick, still in development.
-updates automatically when i fix shit.
-
-check it out! maybe you could yoiu know... use it in YOUR business
+For the latest version notes, go to https://evoxta.com/adreset/update-notes/1.0.1/
+For support, email us at software@evoxta.com
