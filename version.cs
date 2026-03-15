@@ -15,7 +15,7 @@ namespace EvoxtaADReset
         }
         public static string UpdateFileURL(string version)
         {
-            return $"https://evoxta.com/adreset/update-files/{version}/EvoxtaADReset.exe";
+            return $"https://evoxta.com/adreset/update-files/{version}/EvoxtaADreset.exe";
         }
     }
 }
