@@ -1,3 +1,6 @@
+> [!WARNING]  
+> There is an error with the Password Control updater. We are working on a fix.
+
 # Active Directory Password Control
 Password Control by Evoxta is a pretty cool tool, perfect for IT administrators to help simplify resetting, disabling or modifying Windows Server Active Directory user accounts.
 
