@@ -86,6 +86,11 @@ namespace EvoxtaADReset
             PasswordVisible.Text = password;
         }
 
+private void CheckAccount_Click(object sender, RoutedEventArgs e)
+{
+    UsernameBox_LostFocus(sender, e);
+}
+
 private void UsernameBox_LostFocus(object sender, RoutedEventArgs e)
 {
     if (string.IsNullOrWhiteSpace(UsernameBox.Text))
@@ -147,8 +152,14 @@ private void UsernameBox_LostFocus(object sender, RoutedEventArgs e)
             if (!string.IsNullOrEmpty(password))
                 ADHelper.ResetPassword(currentUser.SamAccountName, password);
 
-            if (DisableCheck.IsChecked == true)
-                ADHelper.DisableAccount(currentUser.SamAccountName);
+if (DisableCheck.IsChecked == true)
+{
+    ADHelper.DisableAccount(currentUser.SamAccountName);
+}
+else
+{
+    ADHelper.EnableAccount(currentUser.SamAccountName);
+}
 
             if (ResetCheck.IsChecked == true)
                 ADHelper.ForcePasswordReset(currentUser.SamAccountName);

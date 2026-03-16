@@ -55,6 +55,18 @@ namespace EvoxtaADReset
             user.Save();
         }
 
+public static void EnableAccount(string username)
+{
+    using var context = new PrincipalContext(ContextType.Domain);
+    var user = UserPrincipal.FindByIdentity(context, username);
+
+    if (user == null)
+        return;
+
+    user.Enabled = true;
+    user.Save();
+}
+
         public static void ForcePasswordReset(string username)
         {
             using var context = new PrincipalContext(ContextType.Domain);
