@@ -3,8 +3,8 @@ namespace EvoxtaADReset
     public static class AppInfo
     {
         public const string Name = "Password Control";
-        public const string Version = "1.0.1";
-        public const string Developer = "Ethan from Evoxta";
+        public const string Version = "1.0.2";
+        public const string Developer = "Evoxta";
 
         public const string LatestVersionURL =
             "https://evoxta.com/adreset/latest";
